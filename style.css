@@ -105,8 +105,8 @@ body {
     }
 
     .envelope .flap {
-        border-left: 100px solid transparent;
-        border-right: 100px solid transparent;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
         border-top: 100px solid #ff7eb9;
     }
 
