@@ -105,8 +105,8 @@ body {
     }
 
     .envelope .flap {
-        border-left: 150px solid transparent;
-        border-right: 150px solid transparent;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
         border-top: 175px solid #ff7eb9;
     }
 
@@ -114,7 +114,7 @@ body {
         width: 90%;
         height: 90%;
         left: 5%;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .envelope .letter .front img {
