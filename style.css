@@ -80,7 +80,7 @@ body {
 
 .envelope .letter .back {
     transform: rotateY(180deg);
-    font-size: 10px;
+    font-size: 17.5px;
 }
 
 .envelope.open .flap {
@@ -100,14 +100,14 @@ body {
 /* Адаптивный дизайн */
 @media (max-width: 00px) {
     .envelope {
-        width: 600px;
+        width: 550px;
         height: 700px;
     }
 
     .envelope .flap {
-        border-left: 150px solid transparent;
-        border-right: 150px solid transparent;
-        border-top: 150px solid #ff7eb9;
+        border-left: 175px solid transparent;
+        border-right: 175px solid transparent;
+        border-top: 175px solid #ff7eb9;
     }
 
     .envelope .letter {
