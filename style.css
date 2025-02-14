@@ -108,6 +108,8 @@ body {
         border-left: 100px solid transparent;
         border-right: 100px solid transparent;
         border-top: 100px solid #ff7eb9;
+        width: 90%;
+        height: 90%;
     }
 
     .envelope .letter {
