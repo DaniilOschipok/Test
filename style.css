@@ -98,10 +98,10 @@ body {
 }
 
 /* Адаптивный дизайн */
-@media (max-width: 600px) {
+@media (max-width: 00px) {
     .envelope {
-        width: 300px;
-        height: 400px;
+        width: 600px;
+        height: 700px;
     }
 
     .envelope .flap {
