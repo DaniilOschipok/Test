@@ -10,18 +10,16 @@ body {
 
 .envelope {
     position: relative;
-    width: 400px;
-    height: 500px;
+    width: 500px;
+    height: 630px;
     cursor: pointer;
 }
 
 .envelope .flap {
     position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 200px solid transparent;
-    border-right: 200px solid transparent;
-    border-top: 200px solid #ff7eb9;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-top: 255px solid #ff7eb9;
     top: 0;
     transform-origin: top;
     transition: transform 0.5s ease-in-out;
@@ -48,21 +46,22 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     color: #333;
     z-index: 0;
     transform: translateY(100%);
     opacity: 0;
+    transform-style: preserve-3d;
 }
 
 .envelope .letter .front .click {
-    font-size: 16px;
+    font-size: 17.5px;
     color: crimson;
 }
 
@@ -79,7 +78,7 @@ body {
 
 .envelope .letter .back {
     transform: rotateY(180deg);
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .envelope.open .flap {
@@ -96,32 +95,40 @@ body {
     transform: rotateY(180deg);
 }
 
-@media (max-width: 600px) {
+/* Адаптивный дизайн */
+@media (min-width: 0px), (max-width: 600px) {
     .envelope {
         width: 300px;
-        height: 400px;
-    }
-    .envelope .flap {
-        border-left: 150px solid transparent;
-        border-right: 150px solid transparent;
-        border-top: 150px solid #ff7eb9;
-    }
-    .envelope .letter {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 400px) {
-    .envelope {
-        width: 250px;
         height: 350px;
     }
+
     .envelope .flap {
-        border-left: 125px solid transparent;
-        border-right: 125px solid transparent;
-        border-top: 125px solid #ff7eb9;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-top: 100px solid #ff7eb9;
     }
+
     .envelope .letter {
+        width: 90%;
+        height: 90%;
+        left: 5%;
         font-size: 14px;
+    }
+
+    .envelope .letter .front img {
+        width: 160px;
+        height: 120px;
+    }
+
+    .envelope .letter .front p {
+        font-size: 11px;
+    }
+
+    .envelope .letter .back {
+        font-size: 12px;
+    }
+
+    .envelope .letter .front .click {
+        font-size: 8px;
     }
 }
