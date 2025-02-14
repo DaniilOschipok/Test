@@ -80,7 +80,7 @@ body {
 
 .envelope .letter .back {
     transform: rotateY(180deg);
-    font-size: 17.5px;
+    font-size: 10px;
 }
 
 .envelope.open .flap {
