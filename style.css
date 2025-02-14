@@ -10,8 +10,8 @@ body {
 
 .envelope {
     position: relative;
-    width: 300px;
-    height: 200px;
+    width: 500px;
+    height: 630px;
     cursor: pointer;
 }
 
@@ -19,9 +19,9 @@ body {
     position: absolute;
     width: 0;
     height: 0;
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
-    border-top: 100px solid #ff7eb9;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-top: 255px solid #ff7eb9;
     top: 0;
     transform-origin: top;
     transition: transform 0.5s ease-in-out;
@@ -54,12 +54,17 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 18px;
+    font-size: 25px;
     color: #333;
     z-index: 0;
     transform: translateY(100%);
     opacity: 0;
     transform-style: preserve-3d;
+}
+
+.envelope .letter .front .click {
+    font-size: 10px;
+    color:crimson 
 }
 
 .envelope .letter .front, .envelope .letter .back {
@@ -75,6 +80,7 @@ body {
 
 .envelope .letter .back {
     transform: rotateY(180deg);
+    font-size: 17.5px;
 }
 
 .envelope.open .flap {
@@ -82,7 +88,7 @@ body {
 }
 
 .envelope.open .letter {
-    transform: translateY(-120%);
+    transform: translateY(-10%);
     z-index: 3;
     opacity: 1;
 }
