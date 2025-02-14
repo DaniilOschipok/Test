@@ -19,8 +19,8 @@ body {
     position: absolute;
     width: 0;
     height: 0;
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
     border-top: 255px solid #ff7eb9;
     top: 0;
     transform-origin: top;
@@ -100,14 +100,14 @@ body {
 /* Адаптивный дизайн */
 @media (max-width: 00px) {
     .envelope {
-        width: 600px;
-        height: 700px;
+        width: 200px;
+        height: 250px;
     }
 
     .envelope .flap {
         border-left: 100px solid transparent;
         border-right: 100px solid transparent;
-        border-top: 175px solid #ff7eb9;
+        border-top: 100px solid #ff7eb9;
     }
 
     .envelope .letter {
