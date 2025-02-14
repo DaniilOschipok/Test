@@ -98,7 +98,7 @@ body {
 }
 
 /* Адаптивный дизайн */
-@media (max-width: 00px) {
+@media (max-width: 800px) {
     .envelope {
         width: 200px;
         height: 250px;
