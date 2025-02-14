@@ -100,13 +100,13 @@ body {
 /* Адаптивный дизайн */
 @media (min-width: 0px), (max-width: 400px) {
     .envelope {
-        width: 500px;
-        height: 550px;
+        width: 300px;
+        height: 350px;
     }
 
     .envelope .flap {
-        border-left: 400px solid transparent;
-        border-right: 400px solid transparent;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
         border-top: 100px solid #ff7eb9;
     }
 
