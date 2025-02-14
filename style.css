@@ -64,7 +64,7 @@ body {
 
 .envelope .letter .front .click {
     font-size: 10px;
-    color:crimson 
+    color: crimson;
 }
 
 .envelope .letter .front, .envelope .letter .back {
@@ -100,20 +100,37 @@ body {
 /* Адаптивный дизайн */
 @media (max-width: 600px) {
     .envelope {
-        width: 200px;
-        height: 130px;
+        width: 300px;
+        height: 400px;
     }
 
     .envelope .flap {
-        border-left: 100px solid transparent;
-        border-right: 100px solid transparent;
-        border-top: 70px solid #ff7eb9;
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        border-top: 150px solid #ff7eb9;
     }
 
     .envelope .letter {
         width: 90%;
-        height: 100%;
+        height: 90%;
         left: 5%;
         font-size: 16px;
+    }
+
+    .envelope .letter .front img {
+        width: 160px;
+        height: 120px;
+    }
+
+    .envelope .letter .front p {
+        font-size: 14px;
+    }
+
+    .envelope .letter .back {
+        font-size: 12px;
+    }
+
+    .envelope .letter .front .click {
+        font-size: 8px;
     }
 }
