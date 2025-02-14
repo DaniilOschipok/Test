@@ -98,15 +98,15 @@ body {
 }
 
 /* Адаптивный дизайн */
-@media (max-width: 800px) {
+@media (min-width: 0px), (max-width: 400px) {
     .envelope {
         width: 200px;
         height: 250px;
     }
 
     .envelope .flap {
-        border-left: 50px solid transparent;
-        border-right: 50px solid transparent;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
         border-top: 100px solid #ff7eb9;
     }
 
